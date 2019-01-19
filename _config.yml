@@ -1,43 +1,162 @@
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
+# which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+title:  TODO
+subtitle: TODO
+name: TODO
+email: TODO
+description: TODO
+keywords: TODO
+encoding: "utf-8"
+favicon: sparrow.png 
 
+repository: JustJavaIt/JustJavaIt.github.io
+github_url: https://github.com/JustJavaIt
+#cnblog_url: TODO
+url: http://www.sparrow.wang
+enforce_ssl: sparrow.wang
+
+## Gem
+plugins:
+  - jekyll-paginate
+  - jekyll-geo-pattern
+  - rouge
+  - kramdown
+  - jekyll-github-metadata
+  - jekyll-octicons
+  
 # Build settings
 markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
+highlighter: rouge
+lsi:         false
+excerpt_separator: "\n\n"
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+source:      .
+destination: ./_site
+
+quiet:    false
+defaults: []
+
+kramdown:
+  input: GFM
+  enable_coderay: true
+  syntax_highlighter: rouge
+
+syntax_highlighter_opts:
+   coderay_line_numbers:  nil
+
+# Pagination
+paginate: 10
+paginate_path: 'page:num'
+
+# Navigation. If you do not like these modules, just remove them :D
+# navs:
+
+#   -
+#     href: /
+#     label: Home
+
+#   -
+#     href: /spring-boot.html
+#     label: Spring-Boot
+
+#   -
+#     href: /spring-cloud.html
+#     label: Spring-Cloud
+
+#   -
+#     href: /archives.html
+#     label: Archives
+
+#   -
+#     href: /link.html
+#     label: Link
+
+#   -
+#     href: /about.html
+#     label: About
+
+
+# # labels. my blog key words
+# labels:
+
+#   -
+#     href: /share/2017/10/01/resource-sharing.html
+#     name: 资源
+
+#   -
+#     href: /life.html
+#     name: 故事
+
+#   -
+#     href: /arch.html
+#     name: 架构
+    
+#   -
+#     href: /jvm.html
+#     name: Jvm
+
+#   -
+#     href: /fastdfs.html
+#     name: FastDFS
+
+#   -
+#     href: /mongodb.html
+#     name: MongoDB
+
+#   -
+#     href: /docker.html
+#     name: Docker
+
+#   -
+#     href: /open-source.html
+#     name: Code   
+
+#   -
+#     href: /it.html
+#     name: It   
+
+# # selected articles
+# classes:
+
+#   -
+#     href: /life.html
+#     name: 我的故事
+#     describe: 生活就是故事，故事就是生活
+
+#   -
+#     href: /arch.html
+#     name: 架构师之路
+#     describe: 一个架构师的自我修养
+
+#   -
+#     href: /jvm.html
+#     name: Jvm系列文章
+#     describe: Java之根基，Java程序员必学
+
+
+# ---------------- #
+#       RSS        #
+# ---------------- #
+subscribe_rss: /feed.xml
+
+# Sidebar to show popular repo
+side_bar_repo_limit: 6 # Number of repos to show
+
+# Google Analytics
+# analytics :
+# provider : google
+#   google :
+#     tracking_id : ''  # ex. UA-72165600-X
+
+
+# For about.html. Fell free to create your own!
+skill_software_keywords: [Java, MySQL, Oracle, Design Patterns]
+skill_j2ee_keywords: [Spring, Struct, Hibernet, MyBatis, JSP]
+skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, NodeJS, ExpressJS, MongoDB, Redis, PHP,  Boostrap]
+skill_mobile_app_keywords: [vuejs, hyhird app]
