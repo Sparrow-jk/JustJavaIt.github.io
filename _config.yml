@@ -181,7 +181,7 @@ comments_provider: gitalk
 # https://github.com/gitalk/gitalk#install
 gitalk:
     owner: JustJavaIt
-    repo: JustJavaIt.github.io
+    repo: JustJavaIt.comments
     clientID: 864efc500d37d2ba44e1
     clientSecret: 06ebe69adeb78518eaba66bf6eb40cea8782bb8b
 # 在使用其它评论组件时可点击显示 Disqus
