@@ -35,7 +35,7 @@
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
   {% endif %} -->
 
-  <!-- {% case site.comments_provider %} -->
+   <!-- {% case site.comments_provider %} -->
     <!-- {% when 'disqus' %}
       {% if site.disqus and site.disqus.username %}
         {% assign load_disqus = true %}
@@ -63,8 +63,8 @@
           <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
         {% endif %}
       {% endif %} -->
-<!--     {% when 'gitment' %}
-        <div id="container"></div>
+     <!-- {% when 'gitment' %} -->
+        <!-- <div id="container"></div>
         <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
         <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
         <script>
@@ -90,10 +90,10 @@
             repo: '{{ site.gitalk.repo }}',
             owner: '{{ site.gitalk.owner }}',
             admin: ['{{ site.gitalk.owner }}'],
-            labels: ['gitment'],
+            labels: ['gitalk'],
             perPage: 50,
         })
         gitalk.render('gitalk-container')
         </script>
-  <!-- {% endcase %} -->
+   <!-- {% endcase %} -->
 {% endif %}
