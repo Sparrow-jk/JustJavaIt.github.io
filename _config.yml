@@ -19,7 +19,7 @@ repository: JustJavaIt/JustJavaIt.github.io
 github_url: https://github.com/JustJavaIt
 #cnblog_url: TODO
 url: https://www.sparrow.wang
-enforce_ssl: https://www.sparrow.wang
+enforce_ssl: www.sparrow.wang
 
 ## Gem
 plugins:
