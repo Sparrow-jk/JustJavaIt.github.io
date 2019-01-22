@@ -18,8 +18,8 @@ favicon: sparrow.png
 repository: JustJavaIt/JustJavaIt.github.io
 github_url: https://github.com/JustJavaIt
 #cnblog_url: TODO
-url: https://www.sparrow.wang
-enforce_ssl: www.sparrow.wang
+url: https://sparrow.wang
+enforce_ssl: sparrow.wang
 
 ## Gem
 plugins:
